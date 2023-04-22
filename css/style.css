@@ -298,42 +298,30 @@ header{
     background: hsl(var(--clr-primary-red));
 }
 
-.service{
-    --padding-top-service: 15rem;
-
-    min-height: 100vh;
-    padding-top: var(--padding-top-service);
-    padding-bottom: 3rem;
+.even-columns{
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
-.service:nth-child(1){
-    background: url('/images/desktop/image-graphic-design.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.service:nth-child(2){
-    background: url('/images/desktop/image-photography.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.service:last-child{
+    padding-bottom: 7rem;
 }
 
 .service .service-title,
 .service .service-description{
     display: block;
-    width: min(390px, 100%);
     margin-inline: auto;
+    width: min(390px, 100%);
     text-align: center;
-    padding: 0 1.5rem;
+    padding: 0 2rem 2rem;
 }
 
 .service .service-title{
     font-family: var(--ff-accent);
     font-size: 2rem;
     font-weight: 700;
-    padding-bottom: 1.5rem;
+    margin-top: -12rem;
+    padding-bottom: 1rem;
 }
 
 .service:nth-child(1) .service-title,
@@ -517,6 +505,12 @@ footer{
     }
 }
 
+@media(min-width: 45em){
+    .even-columns{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 @media(min-width: 47em){
     .columns{
         grid-auto-flow: column;
@@ -544,8 +538,42 @@ footer{
         --fs: 2.5rem;
     }
 
+    .service .service-title{
+        margin-top: -10rem;
+    }
+
     .grid-columns{
         grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media(min-width: 441px){
+    .service .service-title{
+        margin-top: -22rem;
+    }
+
+    .service:last-child{
+        padding-bottom: 15rem;
+    }
+}
+
+@media(min-width: 623px){
+    .service .service-title{
+        margin-top: -29rem;
+    }
+
+    .service:last-child{
+        padding-bottom: 20rem;
+    }
+}
+
+@media(min-width: 720px){
+    .service .service-title{
+        margin-top: -9rem;
+    }
+
+    .service:last-child{
+        padding-bottom: 0;
     }
 }
 
