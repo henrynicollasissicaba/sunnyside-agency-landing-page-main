@@ -462,7 +462,7 @@ footer{
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
-        min-height: 100vh;
+        height: 85vh;
     }
 
     .header{
