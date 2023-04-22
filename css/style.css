@@ -110,7 +110,7 @@ body{
 /* HEADER SECTION */
 header{
     position: relative;
-    background: url('/images/desktop/image-header.jpg');
+    background-image: url('/images/desktop/image-header.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -459,6 +459,10 @@ footer{
 @media(max-width: 45em){
     header{
         background-image: url('../images/mobile/image-header.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        min-height: 100vh;
     }
 
     .header{
