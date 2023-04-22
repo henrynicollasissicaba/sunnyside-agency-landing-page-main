@@ -457,6 +457,10 @@ footer{
 
 /* MEDIA QUERIES */
 @media(max-width: 45em){
+    header{
+        background-image: url('../images/mobile/image-header.jpg');
+    }
+
     .header{
         justify-content: space-between;
         padding: .5rem 1rem;
