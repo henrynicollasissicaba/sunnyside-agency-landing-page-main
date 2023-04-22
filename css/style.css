@@ -313,6 +313,10 @@ header{
     font-size: 2rem;
 }
 
+.service .service-description{
+    line-height: 2;
+}
+
 .service .service-title,
 .service .service-description{
     width: min(400px, 100%);
